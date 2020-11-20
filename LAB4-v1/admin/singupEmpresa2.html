@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>TouristApp</title>
+  <link rel='stylesheet' href='../css/mainSturista.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+   background-image: url("../img/imgbus2.jpg");
+   min-height: 380px;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #127681;
+  color: white;
+  border-radius: 10px;
+  border:white;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #127681;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #127681;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+  </style>
+</head>
+
+<body>
+
+
+    <div class="barra">
+
+       <div class='logo'>TouristApp</div>
+
+       <div class='doble'>
+            <div class="space">
+              <form action="/action_page.php" class="container">
+
+              <form id="regForm" action="/action_page.php">
+                    <h1>¡Bienvenidos!</h1>
+                    <h3>Bien! para que puedas mostrar todo el valor de tu <font color="#f3c623">empresa</font> a tus futuros
+                    clientes, bríndanos un poco más de información. Con ella, se personalizará tu perfil y nosotros hacemos
+                  el resto!</h3></br>
+
+                    <label for="email"><b>Por favor, describe brevemente tus servicios a ofrecer:</b></label>
+                    <input type="text" placeholder="Resumen" name="tour" required>
+
+                    <label for="psw"><b>¿Ofreces algun paquete vacacional?</b></label>
+                    <input type="text" placeholder="Palabras clave" name="actividades" required>
+
+                    <label for="email"><b>Anexa imagenes de tu destino:</b></label>
+                    <input type="file" placeholder="img" name="destinos" required>
+
+                  </br>
+                    <input style="background-color:#f3c623" type="submit" value="Finalizar">
+
+                  </form>
+
+
+              </form>
+            </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

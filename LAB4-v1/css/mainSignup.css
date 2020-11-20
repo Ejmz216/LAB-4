@@ -1,0 +1,230 @@
+
+body, html {
+    height: 100%;
+
+  }
+
+  .bg-img {
+    /* The image used */
+    background-image: url("../img/img8.jpg");
+
+    min-height: 100%;
+
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    width: 40%;
+    padding: 16px;
+    background-color:rgba(255,255,255, 0.8);
+    z-index: 2;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+    color:#10375c;
+    border-radius: 10px;
+
+  }
+
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  h1{
+    padding:30px;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+color:#10375c;
+}
+
+/*-------------------------------SOCIAL MEDIA---------------------------------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.5;
+    color:#10375c;
+}
+
+.fa-facebook {
+  color:#10375c;
+}
+
+.fa-twitter {
+  color:#10375c;
+
+}
+
+.fa-whatsapp {
+    color:#10375c;
+}
+.fa-instagram {
+    color:#10375c;
+}
+/*-------------------------------Primera seccion------------------------------*/
+.barra{
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+
+}
+.logo{
+  font-family: 'Passero One', cursive;
+  font-size: 800%;
+  color:#127681;
+  padding: 80px;
+   -webkit-text-stroke: 2px white;
+}
+
+.doble{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.space {
+  /*estilo*/
+  padding: 40px;
+  width:400px;
+  height: 130px;
+  flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+}
+input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #026776;
+  border-radius: 10px;
+  background: white;
+  margin: 0 0 20px;
+  overflow: hidden;
+  padding: 10px;
+  font-style: italic;
+}
+.btn {
+  font-family: 'Passero One', cursive;
+  background-color: #127681;
+  border: 10px;
+  border-color: #f3c623;
+  text-decoration:none;
+  color: white;
+  padding: 3% 17%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 500%;
+  opacity: 0.9;
+
+}
+.btn:hover {
+  opacity: 1;
+  background-color:#f3c623;
+}
+.btn:hover{opacity: 0.7}
+
+/*-------------------------------Media------------------------------*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  body {
+    /*background-color: #F09A9D; /* Red */
+  }
+  .barra{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+  .separador{
+    height: 0%;
+    width: 0%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  body {
+    /*background-color: #F5CF8E;*/
+    /* Yellow */
+  }
+  .barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+  .separador,
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    /*background-color: #B2D6FF;*/
+    /* Blue */
+
+  }
+  .barra,
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+}

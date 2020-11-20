@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  color:#c4f2d4;
+}
+
+/*-------------------------------SOCIAL MEDIA---------------------------------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+    opacity: 0.5;
+    color: #127681;
+}
+
+.fa-facebook {
+  color: #f3c623;
+}
+
+.fa-twitter {
+  color: #f3c623;
+
+}
+
+.fa-whatsapp {
+    color: #f3c623;
+}
+.fa-instagram {
+    color: #f3c623;
+}
+/*-------------------------------Primera seccion------------------------------*/
+.barra{
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+
+}
+.logo{
+  font-family: 'Passero One', cursive;
+  font-size: 800%;
+  color:white;
+  padding: 80px;
+}
+.separador{
+    display: flex;
+    width: 5px;
+    height: 400px;
+    background-color: white;
+}
+.doble{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  color:#c4f2d4;
+  padding: 10px;
+
+}
+.space {
+  /*estilo*/
+  padding: 40px;
+  width:400px;
+  height: 130px;
+  flex-direction: column;
+	align-items: center;
+	justify-items: center;
+	align-content: center;
+}
+input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #026776;
+  border-radius: 10px;
+  background: white;
+  margin: 0 0 20px;
+  overflow: hidden;
+  padding: 10px;
+  font-style: italic;
+}
+.btn {
+  font-family: 'Passero One', cursive;
+  background-color: #127681;
+  border: 10px;
+  border-color: #f3c623;
+ text-decoration:none;
+
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 10px;
+
+}
+.btn:hover{opacity: 0.7}
+
+/*-------------------------------Media------------------------------*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  body {
+    /*background-color: #F09A9D; /* Red */
+  }
+  .barra,
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+  .separador{
+    height: 0%;
+    width: 0%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  body {
+    /*background-color: #F5CF8E;*/
+    /* Yellow */
+  }
+  .barra,
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+  .separador,
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    /*background-color: #B2D6FF;*/
+    /* Blue */
+
+  }
+  .barra,
+  .logo,
+  .doble,
+  .texto,
+  .space,
+  .space2,
+}

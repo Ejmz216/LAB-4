@@ -1,0 +1,107 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+p {
+ font-family: 'Raleway', sans-serif;
+ font-size: 150%;
+ color:#c4f2d4;
+}
+h1 {
+    font-family: 'Passero One', cursive;
+    font-size: 500%;
+    color:white;
+    padding: 30px;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Images used */
+.img1 { background-image: url("../img/img9.jpg"); }
+.img2 { background-image: url("../img/img3.jpg"); }
+.img3 { background-image: url("../img/img4.jpg"); }
+.img4 { background-image: url("../img/img5.jpg"); }
+.img5 { background-image: url("../img/img6.jpg"); }
+.img6 { background-image: url("../img/img7.jpg"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Passero One', cursive;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(244, 246, 255, 0.8); /* Black w/opacity/see-through */
+  color: #10375c;
+  font-weight: bold;
+  font-size: 80px;
+  border: 5px solid white;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text a{
+ font-family: 'Raleway', cursive;
+ background-color: #127681;
+ border: 10px;
+ border-color: #f3c623;
+ text-decoration:none;
+ color: white;
+ padding: 16px 32px;
+ text-align: center;
+ font-size: 16px;
+ margin: 4px 2px;
+ opacity: 1;
+ transition: 0.5s;
+ border-radius: 10px;
+ width: 200px;
+}
+.btn:hover{opacity: 0.7}
+
+/*-------------------------------Media------------------------------*/
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+ body {
+   /*background-color: #F09A9D; /* Red */
+ }
+ .bg-text{
+   font-size: 40px;
+ }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+ body {
+   /*background-color: #F5CF8E;*/
+   /* Yellow */
+ }
+ .bg-text,
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+ body {
+   /*background-color: #B2D6FF;*/
+   /* Blue */
+
+ }
+ .bg-text,
+}

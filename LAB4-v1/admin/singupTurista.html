@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <title>TouristApp</title>
+  <link rel='stylesheet' href='../css/mainSturista.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+   background-image: url("../img/imgboy2.jpg");
+   min-height: 380px;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+  }
+  * {
+  box-sizing: border-box;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+
+    <div class="barra">
+
+       <div class='logo'>TouristApp</div>
+
+       <div class='doble'>
+            <div class="space">
+              <form action="/action_page.php" class="container">
+
+              <form id="regForm" action="/action_page.php">
+                    <h1>¡Bienvenido Turista!</h1>
+                    <h3>Ahora suministra tus datos <font color="#f3c623">personales</font> y conversaremos! </h3></br>
+
+                    <label for="name"><b>Nombre:</b></label>
+                    <input type="text" placeholder="ej. Pedro Pascal" name="name" required>
+
+                    <label for="email"><b>E-mail:</b></label>
+                    <input type="email" placeholder="Mail" name="email" required>
+
+                    <label for="cel"><b>Celular:</b></label>
+                    <input type="tel" placeholder="Cel" name="cel" required>
+
+                    <label for="date"><b>Fecha de nacimiento:</b></label>
+                    <input type="date" placeholder="fecha" name="date" required>
+
+                    <label for="user"><b>Usuario</b></label>
+                    <input type="text" placeholder="Apodo" name="user" required>
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Password" name="psw" required>
+
+                    <label for="city"><b>Ciudad:</b></label>
+                    <input type="text" placeholder="Nueva york" name="city" required>
+
+                  </br>
+                  </br>
+                    <a  href="../admin/singupTurista2.html" class="btn">Siguiente</a>
+
+                  </form>
+
+
+              </form>
+            </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
